@@ -1,8 +1,8 @@
-soc_min = 20
-soc_max = 80
+SOC_MIN = 20
+SOC_MAX = 80
 
-def soc_limit(soc):
-    if soc < soc_min or soc > soc_max:
+def soc_is_ok(soc):
+    if soc < SOC_MIN or soc > SOC_MAX:
         print('State of Charge is out of range!')
         return False
     return True
